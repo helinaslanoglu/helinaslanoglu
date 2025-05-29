@@ -1,249 +1,188 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolyo Sitesi</title>
-    <!-- Bootstrap CSS -->
-    <link href="bootstrap/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>My Personal Portfolio | Web Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="ha.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="ha.jpg">
+    
+    <!-- Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <style>
-        :root {
-            --primary-color: #7843e9;
-            --secondary-color: #333;
-            --light-color: #f5f5f5;
-            --dark-color: #111;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--secondary-color);
-            line-height: 1.7;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-        }
-        
-        .navbar {
-            padding: 1rem 0;
-            background-color: #fff !important;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--dark-color) !important;
-        }
-        
-        .nav-link {
-            color: var(--secondary-color) !important;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary-color) !important;
-        }
-        
-        .hero {
-            padding: 8rem 0;
-            background-color: var(--light-color);
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2.5rem;
-            max-width: 700px;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 0.75rem 1.5rem;
-            font-weight: 500;
-            border-radius: 5px;
-        }
-        
-        .btn-primary:hover {
-            background-color: #673ab7;
-            border-color: #673ab7;
-        }
-        
-        .btn-outline-primary {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 0.75rem 1.5rem;
-            font-weight: 500;
-            border-radius: 5px;
-        }
-        
-        .btn-outline-primary:hover {
-            background-color: var(--primary-color);
-            color: #fff;
-        }
-        
-        .section-heading {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 70px;
-            height: 5px;
-            background-color: var(--primary-color);
-        }
-        
-        .about-desc {
-            font-size: 1.1rem;
-        }
-        
-        .skill-item {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-weight: 500;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-        
-        .project-card {
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .project-card img {
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            color: #fff !important;
-            margin-right: 10px;
-            transition: transform 0.3s;
-        }
-        
-        .social-icon:hover {
-            transform: translateY(-5px);
-        }
-        
-        footer {
-            background-color: var(--dark-color);
-        }
-    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Background elements -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    
+    <!-- Header Navigation -->
+    <header class="header">
         <div class="container">
-            <a class="navbar-brand" href="#">AD SOYAD</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Hakkımda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projeler</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">İletişim</a>
-                    </li>
-                </ul>
+            <div class="logo">
+                <a href="#home">Portfolio</a>
             </div>
+            
+            <!-- Mobile Navigation Toggle -->
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="mb-4">MERHABA, BEN AD SOYAD</h1>
-                    <p class="lead mb-5">Front-end odaklı bir Web Geliştiricisiyim, genel ürünün başarısına katkıda bulunan Web Sitelerinin ve Web Uygulamalarının ön yüzlerini oluşturuyorum.</p>
-                    <div>
-                        <a href="#projects" class="btn btn-primary me-3">PROJELERİMİ GÖR</a>
-                        <a href="#contact" class="btn btn-outline-primary">İLETİŞİME GEÇ</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-in">Hello, I'm <span class="highlight">Emma Rose</span></h1>
+                    <p class="subtitle animate-in delay-1">Web Designer & Frontend Developer</p>
+                    <p class="description animate-in delay-2">
+                        I create beautiful and functional websites with clean code and creative designs
+                    </p>
+                    <div class="hero-buttons animate-in delay-3">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
                     </div>
+                </div>
+                <div class="hero-image animate-in delay-2">
+                    <!-- You can add a decorative element or illustration here -->
+                    <div class="illustration">
+                        <div class="illustration-circle"></div>
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Get to know who I am and what I do</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-img-container">
+                        <!-- Replace with your image, this is a placeholder -->
+                        <img src="https://via.placeholder.com/500x500" alt="Profile Picture" class="profile-img">
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>A passionate Web Designer based in New York</h3>
+                    <p>Hello there! I'm Emma, a creative web designer with a passion for building beautiful, functional, and user-friendly websites. I'm currently pursuing my bachelor's degree in Digital Design at NYU.</p>
+                    <p>My approach combines technical expertise with an artistic eye for design. I believe that a good website should not only look good but also provide an intuitive, seamless experience for users.</p>
+                    <p>When I'm not coding or designing, you can find me sketching, exploring coffee shops, or hiking with my dog Luna.</p>
+                    
+                    <div class="about-details">
+                        <div class="about-detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.A. in Digital Design, New York University</p>
+                            </div>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>New York City, NY</p>
+                            </div>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Interests</h4>
+                                <p>UX/UI, Typography, Animation, Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary">Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 py-lg-7">
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-heading">HAKKIMDA</h2>
-                    <p class="lead">Burada benim hakkımda, ne yaptığım ve programlama ve teknoloji açısından mevcut becerilerim hakkında daha fazla bilgi bulabilirsiniz.</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h3>Beni Tanıyın</h3>
-                    <p class="about-desc">Ben genel ürünün başarısına katkıda bulunan Web Sitelerinin ve Web Uygulamalarının ön yüzlerini oluşturan <strong>Front-End odaklı bir Web Geliştiricisiyim</strong>. Bazı çalışmalarımı <a href="#projects" class="text-decoration-none">Projeler</a> bölümünden inceleyebilirsiniz.</p>
-                    
-                    <p class="about-desc">Web Geliştirme alanında yıllar içinde öğrendiğim şeylerle ilgili içerikler paylaşmayı da seviyorum, böylece Geliştirici Topluluğundaki diğer insanlara yardımcı olabiliyorum. Benimle <a href="#" class="text-decoration-none">LinkedIn</a> ve <a href="#" class="text-decoration-none">Instagram</a> üzerinden bağlantı kurabilir veya beni takip edebilirsiniz.</p>
-                    
-                    <p class="about-desc">Web Geliştirme ve Programlama ile ilgili faydalı içerikler paylaştığım bir <a href="#" class="text-decoration-none">blog'um</a> da var.</p>
-                    
-                    <p class="about-desc">Katkıda bulunabileceğim, öğrenebileceğim ve büyüyebileceğim <strong>iş fırsatlarına</strong> açığım. Becerilerim ve deneyimimle eşleşen iyi bir fırsatınız varsa, benimle <a href="#contact" class="text-decoration-none">iletişime geçmekten</a> çekinmeyin.</p>
+            
+            <div class="skills-content">
+                <!-- Design Skills -->
+                <div class="skills-category">
+                    <h3>Design</h3>
+                    <div class="skills-box-container">
+                        <div class="skill-box">UI/UX Design</div>
+                        <div class="skill-box">Figma</div>
+                        <div class="skill-box">Adobe Photoshop</div>
+                        <div class="skill-box">Wireframing</div>
+                        <div class="skill-box">Prototyping</div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3>Becerilerim</h3>
-                    <div class="mt-4">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">Bootstrap</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">SASS</span>
-                        <span class="skill-item">GIT</span>
-                        <span class="skill-item">Github</span>
-                        <span class="skill-item">Responsive Tasarım</span>
-                        <span class="skill-item">SEO</span>
-                        <span class="skill-item">Terminal</span>
-                        <span class="skill-item">Express Basics</span>
-                        <span class="skill-item">SQL Basics</span>
+                
+                <!-- Development Skills -->
+                <div class="skills-category">
+                    <h3>Development</h3>
+                    <div class="skills-box-container">
+                        <div class="skill-box">HTML5</div>
+                        <div class="skill-box">CSS3/SASS</div>
+                        <div class="skill-box">JavaScript</div>
+                        <div class="skill-box">Responsive Design</div>
+                        <div class="skill-box">Bootstrap</div>
+                        <div class="skill-box">Git</div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skills-category">
+                    <h3>Other Skills</h3>
+                    <div class="skills-box-container">
+                        <div class="skill-box">WordPress</div>
+                        <div class="skill-box">SEO</div>
+                        <div class="skill-box">Content Management</div>
+                        <div class="skill-box">Problem Solving</div>
+                        <div class="skill-box">Team Collaboration</div>
                     </div>
                 </div>
             </div>
@@ -251,42 +190,153 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 py-lg-7 bg-light">
+    <section class="projects section" id="projects">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-heading">PROJELER</h2>
-                    <p class="lead">Burada kendi projelerimi ve müşteri projelerimi bulabilirsiniz, her bir proje kendi vaka çalışmasını içermektedir.</p>
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Check out my latest work</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Boutique</h3>
+                        <p>Online clothing store with custom shopping cart</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ui">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Wellness App Design</h3>
+                        <p>UI/UX design for a mobile yoga application</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototype</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Custom portfolio for a professional photographer</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="other">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Identity</h3>
+                        <p>Logo and branding for a local bakery</p>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Logo Design</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="ui">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>Recipe App</h3>
+                        <p>Mobile app design for sharing cooking recipes</p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Mobile</span>
+                            <span>Adobe XD</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Blog</h3>
+                        <p>Blog website with custom post layouts</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="project-view-btn">View Details</button>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Proje 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolyo Uygulaması</h5>
-                            <p class="card-text">Portfolyo, CSS-Tricks, Hostinger gibi en büyük teknoloji sitelerinde yer alan ve dünya çapında binlerce geliştirici tarafından kullanılan başarılı bir Açık Kaynaklı projedir.</p>
-                            <a href="#" class="btn btn-primary">VAKA ÇALIŞMASI</a>
+            
+            <!-- Project Modal -->
+            <div class="project-modal">
+                <div class="modal-container">
+                    <div class="modal-close">&times;</div>
+                    <div class="modal-content">
+                        <h2 class="modal-title">Project Title</h2>
+                        <div class="modal-gallery">
+                            <img src="https://via.placeholder.com/800x500" alt="Project Image">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Proje 2">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Ticaret Sitesi</h5>
-                            <p class="card-text">E-Ticaret, çoklu hizmet lojistik ve taşıma şirketidir ve web sitelerini bildiğim ön yüz araçlarını kullanarak sıfırdan oluşturdum.</p>
-                            <a href="#" class="btn btn-primary">VAKA ÇALIŞMASI</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Proje 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Kurumsal Web Sitesi</h5>
-                            <p class="card-text">Bu web sitesini, güzel kullanıcı arayüzlerine ilgi duyduğum için yeniden oluşturdum. Tüm ön yüzü oluşturmak benim için harika bir deneyimdi.</p>
-                            <a href="#" class="btn btn-primary">VAKA ÇALIŞMASI</a>
+                        <div class="modal-details">
+                            <div class="modal-description">
+                                <h3>Project Description</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, odio eu tempor dictum, massa nisi tempor mi, eget bibendum magna velit non tellus. In hac habitasse platea dictumst.
+                                </p>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                                </p>
+                            </div>
+                            <div class="modal-info">
+                                <h3>Details</h3>
+                                <ul>
+                                    <li><strong>Date:</strong> <span id="modal-date">May 2025</span></li>
+                                    <li><strong>Client:</strong> <span id="modal-client">Client Name</span></li>
+                                    <li><strong>Role:</strong> <span id="modal-role">Web Designer</span></li>
+                                    <li><strong>Technologies:</strong> <span id="modal-technologies">HTML, CSS, JavaScript</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-primary modal-btn" target="_blank">View Live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,51 +345,90 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 py-lg-7">
+    <section class="contact section" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-heading">İLETİŞİM</h2>
-                    <p class="lead">Aşağıdaki formu doldurarak benimle iletişime geçebilirsiniz. En kısa sürede size geri döneceğim.</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Let's create something beautiful together</p>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form class="shadow p-5 rounded bg-white">
-                        <div class="row mb-4">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <label for="name" class="form-label">İsim</label>
-                                <input type="text" class="form-control form-control-lg" id="name" placeholder="İsminiz" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">E-posta</label>
-                                <input type="email" class="form-control form-control-lg" id="email" placeholder="E-posta adresiniz" required>
-                            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="mb-4">
-                            <label for="subject" class="form-label">Konu</label>
-                            <input type="text" class="form-control form-control-lg" id="subject" placeholder="Konu" required>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>hello@emmarose.com</p>
                         </div>
-                        <div class="mb-4">
-                            <label for="message" class="form-label">Mesaj</label>
-                            <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg px-5">GÖNDER</button>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
                         </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>New York, NY</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <h5 class="mb-4">SOSYAL MEDYA</h5>
-                    <div>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-dev"></i></a>
+                    
+                    <!-- Form Success Message -->
+                    <div class="form-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for contacting me. I'll get back to you as soon as possible.</p>
+                        <button class="btn btn-primary close-success">Close</button>
                     </div>
                 </div>
             </div>
@@ -347,13 +436,35 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 text-white text-center">
+    <footer class="footer">
         <div class="container">
-            <p class="mb-0">&copy; 2025 AD SOYAD. Tüm hakları saklıdır. | Frontend Web Geliştirici</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Emma Rose</h3>
+                    <p>Web Designer & Developer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025. All Rights Reserved</p>
+                <p>Made with <i class="fas fa-heart"></i> in New York</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="bootstrap/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Go to top button -->
+    <button class="go-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
